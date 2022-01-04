@@ -99,7 +99,7 @@ body {
     background-color: darkgray;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: minmax(80px, 1fr) 9fr;
 }
 
 .app-area  .header {
@@ -151,52 +151,15 @@ body {
 .card-area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 150px 150px;
+    grid-auto-rows: 150px;
     gap: 20px;
 
 }
-/*
-.card {
-    background-color: ivory;
-    display: grid;
-    grid-template-rows: 1fr 9fr;
-    padding: 10px;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.card div {
-    display: grid;
-    grid-template-columns: 9fr 1fr;
-    background-color: khaki;
-}
-
-.card div h3 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    align-self: center;
-    padding: 0px;
-    margin: 0px;
-}
-
-.card div input {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.card ul {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    background-color: lawngreen;
-}
-
-*/
 
 .card {
     background-color: ivory;
     display: grid;
     grid-template-rows: 1fr 9fr;
-    padding: 10px;
     height: 100%;
     box-sizing: border-box;
 }
@@ -213,15 +176,28 @@ body {
     align-self: center;
     padding: 0px;
     margin: 0px;
+    font-size: 25px;
+    padding: 5px;
 }
 
-.card .card-header h3 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+.card .card-header input {
+    justify-self: center;
+    align-self: center;
+    width: 20px;
+    height: 20px;
 }
 
 .card .card-body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card .card-body p {
+    font-size: 20px;
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }

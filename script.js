@@ -121,11 +121,11 @@ entryXButton.addEventListener('click', function() {
 
 entryAddButton.addEventListener('click', function() {
 
-    let markAsRead = true;
+    let markAsRead = 'true';
     if (hasBeenRead.checked) {
-        markAsRead = true;
+        markAsRead = 'true';
     } else {
-        markAsRead = false;
+        markAsRead = 'false';
     }
 
     newBook = new Book(titleInput.value,authorInput.value,pagesInput.value,markAsRead,bookID);
@@ -159,6 +159,7 @@ removeButton.addEventListener('click', function() {
 markRead.addEventListener('click', function() {
     library.forEach(function(book) {
         if (book.isSelected()) {
+            console.log(book.read);
             if (book.read === 'true') {
                 book.readText.innerText = 'false';
                 book.read = 'false';
