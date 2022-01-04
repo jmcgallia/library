@@ -1,0 +1,227 @@
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+}
+
+.addButton-menu-wrapper {
+    background-color: rgba(0,0,255,0.5);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+} 
+
+.addButton-menu {
+    position: absolute; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+    top: 30%;
+    bottom: 30%;
+    left: 35%;
+    right: 35%;
+    background-color: brown;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.addButton-menu p {
+    justify-self: center;
+    align-self: center;
+    font-size: 24px;
+}
+
+.top-section {
+    grid-column: 1 /2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.top-section button {
+    width: 50px;
+    height: 50px;
+    justify-self: end;
+}
+
+.top-section h3 {
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.entry-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.entry-section input {
+    width: 150px;
+    height: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+.confirm-section {
+    justify-self: center;
+}
+
+.confirm-section button {
+    width: 150px;
+    height: 50px;
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-area {
+    width: 80%;
+    height: 90%;
+    background-color: darkgray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr;
+}
+
+.app-area  .header {
+    background-color: red;
+    display: grid;
+    grid-template-columns:  5fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: start;
+    grid-gap: 20px;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.app-area .header h1 {
+    grid-column: 1 / 2;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    align-self: center;
+    margin: 0px;
+}
+
+.headerButton {
+    align-self: center;
+    width: 100%;
+    height: 50%;
+}
+
+.app-area .header .addButton {
+    grid-column: 2 / 3;
+    background-color: blueviolet;
+}
+
+.app-area .header .removeButton {
+    grid-column: 3 / 4;
+    background-color: green;
+}
+
+.app-area .header .markRead {
+    background-color: indianred;
+    grid-column: 4 / -1;
+}
+
+.app-area .card-area {
+    background-color: blue;
+    padding: 20px;
+}
+
+.card-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+
+}
+/*
+.card {
+    background-color: ivory;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card div {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    background-color: khaki;
+}
+
+.card div h3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card div input {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.card ul {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    background-color: lawngreen;
+}
+
+*/
+
+.card {
+    background-color: ivory;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.card .card-header {
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    background-color: khaki;
+}
+
+.card .card-header h3 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card .card-header h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.card .card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
