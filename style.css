@@ -87,23 +87,28 @@ body {
     margin: 0px;
     width: 100vw;
     height: 100vh;
-    background-color: lightgray;
+    background-color: #EDF2EF;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #212738;
 }
 
 .app-area {
     width: 80%;
     height: 90%;
-    background-color: darkgray;
+    background-color: #212738;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(80px, 1fr) 9fr;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D1D646;
+    border-radius: 5px;
 }
 
 .app-area  .header {
-    background-color: red;
+    background-color: #57C4E5;
     display: grid;
     grid-template-columns:  5fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -111,6 +116,9 @@ body {
     grid-gap: 20px;
     padding: 0px 20px;
     box-sizing: border-box;
+    border-width: 2px;
+    border-bottom: solid;
+    border-color: #D1D646;
 }
 
 .app-area .header h1 {
@@ -128,23 +136,29 @@ body {
     height: 50%;
 }
 
+.addButton,
+.removeButton,
+.markRead {
+    background-color: #F97068;
+    border-color: #D1D646;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
 .app-area .header .addButton {
     grid-column: 2 / 3;
-    background-color: blueviolet;
 }
 
 .app-area .header .removeButton {
     grid-column: 3 / 4;
-    background-color: green;
 }
 
 .app-area .header .markRead {
-    background-color: indianred;
     grid-column: 4 / -1;
 }
 
 .app-area .card-area {
-    background-color: blue;
+    background-color: #212738;
     padding: 20px;
 }
 
@@ -157,7 +171,11 @@ body {
 }
 
 .card {
-    background-color: ivory;
+    background-color: #EDF2EF;
+    border-color: #D1D646;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
     display: grid;
     grid-template-rows: 1fr 9fr;
     height: 100%;
@@ -167,7 +185,10 @@ body {
 .card .card-header {
     display: grid;
     grid-template-columns: 9fr 1fr;
-    background-color: khaki;
+    background-color: #F97068;
+    border-width: 2px;
+    border-bottom: solid;
+    border-color: #D1D646;
 }
 
 .card .card-header h3 {
